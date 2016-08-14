@@ -28,7 +28,7 @@ describe('binarySearchTree', function() {
     expect(tree.right.value).toBe(22);
   });
 
-  it('sorts values when adding', function() {
+  xit('sorts values when adding', function() {
     expect(tree.value).toBe(20);
     tree.insert(15);
     expect(tree.left.value).toBe(15);
@@ -56,7 +56,7 @@ describe('binarySearchTree', function() {
     expect(tree.right.right.right.left.left.right.left.right.value).toBe(34);
   });
 
-  it('returns true if `contains` is passed a value in the tree', function() {
+  xit('returns true if `contains` is passed a value in the tree', function() {
     valuesToInsert.forEach(function(value){
         tree.insert(value);
     });
@@ -65,7 +65,7 @@ describe('binarySearchTree', function() {
     });
   });
 
-  it('returns false if `contains` is passed a value not in the tree', function() {
+  xit('returns false if `contains` is passed a value not in the tree', function() {
     valuesToInsert.forEach(function(value){
         tree.insert(value);
     });
@@ -75,7 +75,7 @@ describe('binarySearchTree', function() {
   });
 
   // obvious advantage: values are processed respecting their comparative order
-  it('runs depth-first (in "in-order" traversal) when depthFirstForEach() is run with no option or "in-order" option', function() {
+  xit('runs depth-first (in "in-order" traversal) when depthFirstForEach() is run with no option or "in-order" option', function() {
     valuesToInsert.forEach(function(value){
         tree.insert(value);
     });
@@ -87,7 +87,7 @@ describe('binarySearchTree', function() {
   });
 
   // one use case: copying a tree (processes roots first)
-  it('runs depth-first (in "pre-order" traversal) when depthFirstForEach() is run with "pre-order" option', function() {
+  xit('runs depth-first (in "pre-order" traversal) when depthFirstForEach() is run with "pre-order" option', function() {
     valuesToInsert.forEach(function(value){
         tree.insert(value);
     });
@@ -96,7 +96,7 @@ describe('binarySearchTree', function() {
   });
 
   // one use case: deleting a tree (processes leaves first)
-  it('runs depth-first (in "post-order" traversal) when depthFirstForEach() is run with "post-order" option', function() {
+  xit('runs depth-first (in "post-order" traversal) when depthFirstForEach() is run with "post-order" option', function() {
     valuesToInsert.forEach(function(value){
         tree.insert(value);
     });
@@ -105,7 +105,7 @@ describe('binarySearchTree', function() {
   });
 
   // helpful when tree levels have meaning (org chart? DOM elements?)
-  it('runs breadth-first when breadthFirstForEach() is run', function() {
+  xit('runs breadth-first when breadthFirstForEach() is run', function() {
     valuesToInsert.forEach(function(value){
         tree.insert(value);
     });
